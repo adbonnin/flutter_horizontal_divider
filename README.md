@@ -1,18 +1,37 @@
 # flutter_horizontal_divider
 
-A new flutter plugin project.
+An horizontal divider for Flutter based on [VerticalDivider](https://api.flutter.dev/flutter/material/VerticalDivider-class.html).
 
-## Getting Started
+## Supported platforms
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+* Flutter Android
+* Flutter iOS
+* Flutter web
+* Flutter desktop
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Live preview
 
-The plugin project was generated without specifying the `--platforms` flag, no platforms are currently supported.
-To add platforms, run `flutter create -t plugin --platforms <platforms> .` under the same
-directory. You can also find a detailed instruction on how to add platforms in the `pubspec.yaml` at https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms.
+https://adbonnin.github.io/flutter_horizontal_divider/
+
+Basic horizontal divider example :
+
+![simple](https://raw.githubusercontent.com/adbonnin/flutter_horizontal_divider/main/doc/screenshots/basic.png)
+
+## How to use
+
+Create an `HorizontalDivider` widget :
+
+```dart
+class BasicExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return HorizontalDivider(
+      color: Colors.blue,
+      height: 10.0,
+      thickness: 4.0,
+      indent: 20.0,
+      endIndent: 20.0,
+    );
+  }
+}
+```
